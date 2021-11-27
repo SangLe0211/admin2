@@ -1,0 +1,85 @@
+.special{
+    width:100%;
+    position: relative;
+    margin-top:50px;
+    img{
+        width:100%;
+        height: 440px;
+        background-size: 100% 100%;
+        opacity: 0.8;
+    }
+    &__content{
+        margin:auto;
+        position: relative;
+        margin-top:30px;
+        h3{
+            font-size: 40px;
+            width: 100%;
+            text-align: center;
+        }
+        &--food{
+            margin-top:20px;
+            display:flex;
+            justify-content: space-between;
+            &--one,
+            &--two{
+                flex-basis: 48%;
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.2),
+                            -5px -5px 10px rgba(0,0,0,0.2);
+                &-img{
+                    width:100%;
+                    height:420px;
+                    img{
+                        opacity: 1;
+                        height:100%;
+                        width:100%;
+                    }
+                }
+                &-title{
+                    margin-top:45px;
+                    text-align: center;
+                    font-size: 26px;
+                    color:#111;
+                    font-weight:bold;
+                }
+                &-desc{
+                    margin:20px 40px;
+                    padding-bottom:50px;
+                    border-bottom:1px solid rgb(199, 195, 195);
+                }
+                &-buy{
+                    margin:20px 40px;
+                    display:flex;
+                    &-title{
+                        display:flex;
+                        flex-direction:column;
+                        border-right:1px solid rgb(189, 189, 189);
+                        padding-right:15px;
+                        &>span:last-child{
+                            color:$secondary_color;
+                        }
+                    }
+                    &-phone{
+                        font-weight:bold;
+                        display: flex;
+                        align-items:center;
+                        padding-left:15px;
+                        font-size:20px;
+                    }
+                    &-money{
+                        flex:1;
+                        text-align: right;
+                        color:$primary_color;
+                        font-size:25px;
+                        font-weight:bold;
+                        sup{
+                            margin-right:-5px;
+                        }
+                        
+                    }
+                    
+                }
+            }
+        }
+    }
+}
